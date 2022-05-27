@@ -9,7 +9,6 @@ data = pd.read_csv('coverage.csv', dtype=int)
 def coverage_plot (data, color):
     ''' data: A pandas dataframe, with a 'Position' column, and a 'Coverage' column,
         color: The hex code of a color as a string
-        style (optional): if you want dark plot pls input style='dark'
         sample usage `coverage_plot(data, '#A0D3FE')` '''
 
     ## Version 1
