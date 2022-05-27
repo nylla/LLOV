@@ -18,7 +18,7 @@ def coverage_plot (data, color):
     sns.lineplot(data=data, x="Position", y="Coverage", ax=ax1)
     data['Coverage'].plot.area(stacked=False, color={'Coverage': color}, alpha=0.2, ax=ax1)
     ax1.xaxis.set_major_formatter(mpl.ticker.FuncFormatter(lambda x, pos: format(x/1000,'1.1f')))
-    ax1.yaxis.set_major_formatter(mpl.ticker.FuncFormatter(lambda x, p: format(int(x), ',')))
+    ax1.yaxis.set_major_formatter(mpl.ticker.FuncFormatter(lambda x, pos: format(int(x), ',')))
     plt.xticks(fontsize=25)
     plt.yticks(fontsize=25)
     plt.xlim(0, 19000)
